@@ -1,0 +1,59 @@
+/* set background color for body element to lightgray */
+body {
+    background-color: lightgray;
+}
+
+/* Container holding the header background image and the text */
+.container {
+    border: 3px solid white;
+    border-radius: 10px 10px 0 0;
+    background-image: url('../../images/header-image-1.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: white;
+    width: 100%;
+    height: 200px;
+}
+
+/* set color for elements as well as set text-decoration and the text-align */
+a {
+    color: white;
+    text-decoration: none;
+    text-align: justify;    
+}
+
+/* added hover to anchors to make them bold when cursor is hovered */
+
+a:hover {
+    font-weight: bold;
+    
+}
+
+/* Top left text position for web page title */
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    font-size: 150%;
+}
+
+/* top right text for anchor elements, sizing and alignment */
+
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    font-size: 100%;
+}
+
+
+
+
+
+
