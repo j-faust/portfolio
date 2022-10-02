@@ -5,7 +5,7 @@
 }
 
 
-/* set background color for body element to lightgray */
+    /* set background color for body element to lightgray */
 body {
     background-color: lightcyan;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,6 +23,7 @@ header {
     color: White;
 }
 
+    /* Anchor text decoration set to none to make for a cleaner look on the page and to also set the color of the text  */
 a {
     text-decoration: none;
     color: #4E5180;
@@ -30,6 +31,7 @@ a {
     padding: 0;
 }
 
+    /* styling added to make text display bold when the cursor is hovered over the link */
 a:hover {
     font-weight: bold;
 }
@@ -37,14 +39,14 @@ a:hover {
 nav {
     display: flex;
 
-
 }
 
+    /* Sets the main container margin to 0px to help with formattting and layout of the webpage */
 .main-container {
     margin: 0px;
 }
 
-/* set color for elements as well as set text-decoration and the text-align */
+    /* set color for elements as well as set text-decoration and the text-align */
 nav a {
     color: white;
     text-decoration: none;
@@ -52,14 +54,14 @@ nav a {
     padding: 14px 20px;
 }
 
-/* added hover to anchors to make them bold when cursor is placed over the element */
+    /* added hover to anchors to make them bold when cursor is placed over the element */
 
 nav a:hover {
     font-weight: bold;
     
 }
 
-/* Container holding the header background image and the text */
+    /* Container holding the header background image and the text */
 .header-container {
     border-bottom: 4px solid white;
     border-radius: 10px 10px 0 0;
@@ -78,8 +80,7 @@ nav a:hover {
 }
 
 
-/* Top left text position for web page title */
-
+    /* Top left text position for web page title */
 .top-left {
     position: absolute;
     top: 0;
@@ -87,8 +88,7 @@ nav a:hover {
     font-size: 150%;
 }
 
-/* top right text for anchor elements, sizing and alignment */
-
+    /* top right text for anchor elements, sizing and alignment */
 .top-right {
     position: absolute;
     top: 0;
@@ -96,7 +96,7 @@ nav a:hover {
     font-size: 100%;
 }
 
-/* Container for displaying the content for within the 'About Me' Section of the webpage */
+    /* Container for displaying the content for within the 'About Me' Section of the webpage */
 .about-container {
 
     max-width: 2000px;
@@ -114,8 +114,8 @@ main {
 }
 
 
-/* Container displaying content and links for the 'Work Section' of the webpage.  Clicking on the images will take to the selected page.
-Currently links and images are placeholder */
+    /* Container displaying content and links for the 'Work Section' of the webpage.  Clicking on the images will take to the selected page.
+    Currently links and images are placeholder */
 .work-container {
     max-width: 2000px;
     height: auto;
@@ -127,7 +127,7 @@ Currently links and images are placeholder */
     width: 100%;
 }
 
-/* Container for content within the 'Contact Me' section.  Flex used to display horizontally and not block */
+    /* Container for content within the 'Contact Me' section.  Flex used to display horizontally and not block */
 .contact-container {
     max-width: 2000px;
     height: auto;
@@ -139,48 +139,56 @@ Currently links and images are placeholder */
     align-items: center;
 }
 
+    /* Container containing the information within the 'Work' section, including
+the image links */
 .work-main {
     display: flex;
     flex-direction: row;
 }
-    
+    /* Contains the smaller image links withing the 'Work-Main' container */
 .small-image-container{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     margin: 0px;
 }
-    
+    /* Container for the big image link setting flex and margin for the image within the container */
 .big-image-link {
     flex: 2 1 auto;
     margin-right: 0px; 
 }
 
+    /* Sets the properties for the big image link within the main work section */
 .big-image-link img {
      width: 61vw;
      margin-right: 0px;
      margin-top: 0px;
 }
 
+    /* sets the margin for the small images to 0px to help with alignment and layout of the webpage */
 .small-image-list {
     margin: 0px;
 }
     
+    /* sets margin and height for the small image link container */
 .small-image-link {
     flex: 0 1 auto;
     margin: 0px;
     height: 33%;
 }
 
+    /* sets the properties for the small image links in the main 'Work' section */
 .small-image-link img {
     width: 20vw;
     margin-right: 0px;
 }
 
+    /* Flex settings for the part of the webpage that displays 'Work' to the left of the big image in the middle */
 .work-sidebar {
     flex: 0 0 auto;
 }
 
+    /* Container for the text, current displaying 'PlaceHolder' over the images for the link to display what page will it will be linked too */
 .image-container {
     position: relative;
     text-align: center;
@@ -188,6 +196,7 @@ Currently links and images are placeholder */
     margin-right: 0px;
 }
 
+    /* styling for the text that displays over the small image links  */
 .small-image-text {
         position: absolute;
         top: 8px;
@@ -197,6 +206,7 @@ Currently links and images are placeholder */
         border-radius: 5px;
 }
 
+    /* styling for the text that displays over the big image link */
 .big-image-text {
     position: absolute;
     top: 24px;
@@ -205,9 +215,5 @@ Currently links and images are placeholder */
     background-color: white;
     padding: 5px;
     border-radius: 5px;
-}
-
-.footer {
-    align-items: center;
 }
 
