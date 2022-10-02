@@ -1,50 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Web Development, Full Stack</title>
+    <title>Web Development, Full Stack, Projects and Applications Portfolio</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
+     
+
 
     <!-- div for header image text and links -->
-    <div class="container"> 
-        <nav class="top-left">Jason Faust Portfolio</nav>     
+    <div class="header-container"> 
+        <header class="top-left">
+            <h1>Jason Faust Portfolio</h1>
+        </header>
         <nav class="top-right">
-            <a href="#">HOME | </a>
-            <a href="#">ABOUT ME | </a>
-            <a href="#">PORTFOLIO | </a>
-            <a href="#">CONTACT</a>
+            <a href="#">HOME</a>
+            <a href="#about-me-section">ABOUT ME</a>
+            <a href="#work-section">PORTFOLIO</a>
+            <a href="#contact-me-section">CONTACT</a>
         </nav>
 
     </div>
 
     <main>
-        <section class="about">
-            <h2>About Me</h2>
-            <p> Info about me goes here!</p>
+    <div class="main-container"> 
+        <div class="about-container">
+            <a id="about-me-section"><aside class="about-sidebar"><h2>About Me</h2></aside></a>
+                <section class="about-main">
+                    <p>Hi! My name it Jason and I am currently enrolled in the Coding Bootcamp!  While I currently work in Finance, I am looking to start a career in Software Development.  Please take some time to view some of my applications below!</p>
+                    <p>Feel free to contact me at the links below with any questions and to view my applications!</p>
+
+                </section>    
+        </div>
+        <div class="work-container">
+            <a id="work-section">
+                <aside class="work-sidebar">
+                    <h2>Work</h2>
+                </aside>
+            </a>
+            <section class="work-main">
+                <div class="big-image-link">
+                  <a>  
+                    <div class="image-container"> 
+                        <img src="./images/team-collaboration.jpg">
+                        <div class="big-image-text">
+                            Placeholder
+                        </div>
+                    </div>
+                  </a>  
+                </div>
+                <div class="small-image-container">
+                    <div class="small-image-list">
+                        <div class="small-image-link">
+                            <a>
+                                <div class="image-container">                   
+                                    <img src="./images/code-screen.jpg">
+                                    <div class="small-image-text">
+                                    Placeholder
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="small-image-link">
+                            <a>
+                                <div class="image-container">                   
+                                    <img src="./images/computer-table-work.jpg">
+                                    <div class="small-image-text">
+                                        Placeholder
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                
+                        <div class="small-image-link">
+                            <a>
+                                <div class="image-container">    
+                                    <img src="./images/coding_tablet.jpg">
+                                    <div class="small-image-text">
+                                        Placeholder
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+         </div>
+        <div class="contact-container">
+            <a id="contact-me-section">
+                <aside class="contact-sidebar">
+                    <h2>Contact Me</h2>
+                </aside>
+            </a>
+        <div class="contact-click"> 
+            <section class="contact-main">
+                <a href="mailto:jfaust16@gmail.com">Email</a>
+                <a href="#">LinkedIn</a>
+                <a href="https://github.com/j-faust">GitHub</a>
+                <a href="#">Website</a>
+        </div>     
+            </section>
+        </div>
+    </div>
 
 
-        </section>
+
     </main>
 
 
-    <div class=""> 
-
     </div>
 
-        
 
-
-
-
-
-
-
-
-
+<footer class="footer">
+</footer>
     
 </body>
 </html>

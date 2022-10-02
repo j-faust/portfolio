@@ -1,11 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+
 /* set background color for body element to lightgray */
 body {
-    background-color: lightgray;
+    background-color: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    
+}
+
+header {
+    padding: 40px;
+    text-align: left;
+    color: White;
+}
+
+a {
+    text-decoration: none;
+    color: #4E5180;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+
+
+}
+
+.main-container {
+    margin: 0px;
+}
+
+/* set color for elements as well as set text-decoration and the text-align */
+nav a {
+    color: white;
+    text-decoration: none;
+    text-align: justify;    
+    padding: 14px 20px;
+}
+
+/* added hover to anchors to make them bold when cursor is placed over the element */
+
+nav a:hover {
+    font-weight: bold;
+    
 }
 
 /* Container holding the header background image and the text */
-.container {
-    border: 3px solid white;
+.header-container {
+    border-bottom: 4px solid white;
     border-radius: 10px 10px 0 0;
     background-image: url('../../images/header-image-1.jpg');
     background-position: center;
@@ -18,21 +74,9 @@ body {
     color: white;
     width: 100%;
     height: 200px;
+    opacity: 0.7;
 }
 
-/* set color for elements as well as set text-decoration and the text-align */
-a {
-    color: white;
-    text-decoration: none;
-    text-align: justify;    
-}
-
-/* added hover to anchors to make them bold when cursor is hovered */
-
-a:hover {
-    font-weight: bold;
-    
-}
 
 /* Top left text position for web page title */
 
@@ -52,8 +96,118 @@ a:hover {
     font-size: 100%;
 }
 
+/* Container for displaying the content for within the 'About Me' Section of the webpage */
+.about-container {
+
+    max-width: 2000px;
+    height: auto;
+    display: flex;
+    flex: 1;
+    background-color: #F0FFFF;
+    margin: 0px;
+    width: 100%;
+}
+
+main {
+    margin-left: 10px;
+    width: 100%;
+}
 
 
+/* Container displaying content and links for the 'Work Section' of the webpage.  Clicking on the images will take to the selected page.
+Currently links and images are placeholder */
+.work-container {
+    max-width: 2000px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: 	#F0FFFF;
+    margin: 0px;
+    width: 100%;
+}
 
+/* Container for content within the 'Contact Me' section.  Flex used to display horizontally and not block */
+.contact-container {
+    max-width: 2000px;
+    height: auto;
+    display: flex;
+    flex: 1;
+    background-color: #F0FFFF;
+    margin: 0px;
+    width: 100%;
+    align-items: center;
+}
 
+.work-main {
+    display: flex;
+    flex-direction: row;
+}
+    
+.small-image-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0px;
+}
+    
+.big-image-link {
+    flex: 2 1 auto;
+    margin-right: 0px; 
+}
+
+.big-image-link img {
+     width: 61vw;
+     margin-right: 0px;
+     margin-top: 0px;
+}
+
+.small-image-list {
+    margin: 0px;
+}
+    
+.small-image-link {
+    flex: 0 1 auto;
+    margin: 0px;
+    height: 33%;
+}
+
+.small-image-link img {
+    width: 20vw;
+    margin-right: 0px;
+}
+
+.work-sidebar {
+    flex: 0 0 auto;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color:#4E5180;
+    margin-right: 0px;
+}
+
+.small-image-text {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+}
+
+.big-image-text {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    font-size: 24pt;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.footer {
+    align-items: center;
+}
 
