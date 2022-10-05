@@ -58,7 +58,7 @@ nav a {
 
 nav a:hover {
     font-weight: bold;
-    
+    transition: .30s;
 }
 
     /* Container holding the header background image and the text */
@@ -107,6 +107,7 @@ nav a:hover {
     margin: 0px;
     width: 100%;
 }
+x
 
 main {
     margin-left: 10px;
@@ -127,6 +128,7 @@ main {
     width: 100%;
 }
 
+
     /* Container for content within the 'Contact Me' section.  Flex used to display horizontally and not block */
 .contact-container {
     max-width: 2000px;
@@ -139,11 +141,13 @@ main {
     align-items: center;
 }
 
+
     /* Container containing the information within the 'Work' section, including
 the image links */
 .work-main {
     display: flex;
     flex-direction: row;
+    width: 100;
 }
     /* Contains the smaller image links withing the 'Work-Main' container */
 .small-image-container{
@@ -156,6 +160,12 @@ the image links */
 .big-image-link {
     flex: 2 1 auto;
     margin-right: 0px; 
+}
+
+.hover-img-link:hover {
+    opacity: .5;
+    transition: .30s;
+    border: 3px darkblue solid;
 }
 
     /* Sets the properties for the big image link within the main work section */
@@ -217,3 +227,26 @@ the image links */
     border-radius: 5px;
 }
 
+.contact-main a {
+    align-items: center;
+    margin-right: 175px;
+    justify-content: space-between;
+}
+
+
+@media  screen and (max-width: 1200px) {
+    header-container {
+        flex-direction: column;
+    }
+    work-main {
+        flex-direction: column;
+    }
+    h1 {
+    font-size: large;
+    flex-direction: column;  
+    }
+    nav{
+        font-size: small;
+        flex-direction: column;
+    }  
+}
