@@ -1,3 +1,10 @@
+:root {
+    --white: #ffff;
+    --darkblue: #4E5180;
+    --bg-color: #F0FFFF;
+    --main-body-bg: lightcyan;
+}
+
 * {
     box-sizing: border-box;
     margin-left: 10px;
@@ -7,7 +14,7 @@
 
     /* set background color for body element to lightgray */
 body {
-    background-color: lightcyan;
+    background-color: var(--main-body-bg);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     margin: 0;
@@ -17,16 +24,18 @@ body {
     
 }
 
+
+/*  Padding and styling added for the header to make it more presentable and clean looking to the user */
 header {
     padding: 40px;
     text-align: left;
-    color: White;
+    color: var(--white);
 }
 
     /* Anchor text decoration set to none to make for a cleaner look on the page and to also set the color of the text  */
 a {
     text-decoration: none;
-    color: #4E5180;
+    color: var(--darkblue);
     margin: 0;
     padding: 0;
 }
@@ -48,7 +57,7 @@ nav {
 
     /* set color for elements as well as set text-decoration and the text-align */
 nav a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     text-align: justify;    
     padding: 14px 20px;
@@ -58,7 +67,7 @@ nav a {
 
 nav a:hover {
     font-weight: bold;
-    transition: .30s;
+    transition: 500ms;
 }
 
     /* Container holding the header background image and the text */
@@ -73,7 +82,7 @@ nav a:hover {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    color: white;
+    color: var(--white);
     width: 100%;
     height: 200px;
     opacity: 0.7;
@@ -103,11 +112,11 @@ nav a:hover {
     height: auto;
     display: flex;
     flex: 1;
-    background-color: #F0FFFF;
+    background-color: var(--bg-color);
     margin: 0px;
     width: 100%;
 }
-x
+
 
 main {
     margin-left: 10px;
@@ -123,7 +132,7 @@ main {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    background-color: 	#F0FFFF;
+    background-color: 	var(--bg-color);
     margin: 0px;
     width: 100%;
 }
@@ -135,7 +144,7 @@ main {
     height: auto;
     display: flex;
     flex: 1;
-    background-color: #F0FFFF;
+    background-color: var(--bg-color);
     margin: 0px;
     width: 100%;
     align-items: center;
@@ -162,6 +171,8 @@ the image links */
     margin-right: 0px; 
 }
 
+
+/* Styling added to the main image links to help the user with visually noticing what link the user is currently hovering over*/
 .hover-img-link:hover {
     opacity: .5;
     transition: .30s;
@@ -202,7 +213,7 @@ the image links */
 .image-container {
     position: relative;
     text-align: center;
-    color:#4E5180;
+    color: var(--darkblue);
     margin-right: 0px;
 }
 
@@ -211,7 +222,7 @@ the image links */
         position: absolute;
         top: 8px;
         left: 16px;
-        background-color: white;
+        background-color: var(--white);
         padding: 5px;
         border-radius: 5px;
 }
@@ -222,11 +233,17 @@ the image links */
     top: 24px;
     left: 16px;
     font-size: 24pt;
-    background-color: white;
+    background-color: var(--white);
     padding: 5px;
     border-radius: 5px;
 }
 
+/* adds line height to about me section to make for easier reading */
+.about-main {
+    line-height: 1.5;
+}
+
+/* Centers and evenly spaces contact links on webpage */
 .contact-main a {
     align-items: center;
     margin-right: 175px;
@@ -234,7 +251,7 @@ the image links */
 }
 
 
-@media  screen and (max-width: 1200px) {
+@media  screen and (max-width: 980px) {
     header-container {
         flex-direction: column;
     }
@@ -249,4 +266,17 @@ the image links */
         font-size: small;
         flex-direction: column;
     }  
+}
+
+@media screen and (max-width: 768px) {
+    .work-container,
+    .work-container:first-child {
+        flex-basis: 100%;
+    }
+
+.work-main {
+       justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
