@@ -42,7 +42,7 @@ The following has been done within the CSS file to offer a good user experience:
 
 ## Website URL Link and Github
 
-[Website URL]()
+[Website URL](https://j-faust.github.io/portfolio/)
 [Github](https://github.com/j-faust/portfolio)
 
 ## Screenshot of the Webpage 
